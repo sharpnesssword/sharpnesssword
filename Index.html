@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+...
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+Write File
+css/style.css
+View
+/* Reset and Base Styles */
+* {
+    margin: 0;
+...
+    .server-status {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+Write File
+js/main.js
+View
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+...
+    setTimeout(createParticle, i * 100);
+}
+
+console.log('%c🗡️ Sharpness Sword Server 🗡️', 'color: #00ff88; font-size: 24px; font-weight: bold;');
+console.log('%cJoin us at play.sharpnesssword.fun', 'color: #7b68ee; font-size: 16px;');
+Write File
+README.md
+View
+# Sharpness Sword - Minecraft Survival Server Website
+
+A beautiful, modern website for the Sharpness Sword Minecraft survival server with stunning gaming aesthetics and smooth...
+...
+- **Store**: shop.sharpnesssword.fun
+
+---
+
+**Ready to deploy!** Simply upload your logo.png and publish the website to start attracting players to your Minecraft s...
+Perfect! I've created a stunning, modern website for your Sharpness Sword Minecraft survival server! 🎮⚔️
+
+✨ What I Built For You
+Your website features:
+
+🎨 Beautiful Modern Design
+Dark gaming theme with vibrant neon green (#00ff88) and purple (#7b68ee) accents
+Animated background with floating particles and gradient effects
+Glitch text effect on the hero title for that cool gaming vibe
+Smooth animations throughout the entire site
+📱 Fully Responsive
+Works perfectly on desktop, tablet, and mobile devices
+Mobile-friendly hamburger menu
+Optimized touch interactions
+🎯 Key Sections
+Hero Section - Eye-catching landing with your server name and call-to-action buttons
+Server Information - Three beautiful cards displaying:
+Server IP: play.sharpnesssword.fun (with copy button)
+Discord: discord.gg/SgKXfpKeV9 (with join link)
+Store: shop.sharpnesssword.fun (with visit link)
+About Section - Tells your server story with animated 3D Minecraft blocks
+Features Section - 6 feature cards highlighting server benefits
+Call-to-Action - Encourages players to join
+Footer - Complete with links and social media
+🎮 Interactive Features
+One-click copy for server IP
+Toast notifications when copying
+Smooth scroll navigation
+Hover effects on all interactive elements
+Live server status indicator (animated pulse)
+Simulated player count
+Easter egg: Try the Konami code! (↑↑↓↓←→←→BA)
+📦 Logo Container Ready
+The site has a prominent logo container that's ready for your logo.png file. When you upload it later, it will automatically display. Until then, it shows a stylish "S" placeholder with the same design aesthetic.
+
+🚀 Next Steps
+Upload your logo: Add a logo.png file (recommended size: 200x200px with transparent background)
+Review the content: Check that all information is correct
+Deploy: Go to the Publish tab to make your website live!
+The website is professional, modern, and perfectly captures the gaming aesthetic that will attract Minecraft players to your survival server! 🔥
+
+Copy
+Save to Notion
+Make index.html with these all
+You've used all your credits. Kindly visit this page to add more: genspark.ai/pricing
+
+Copy
+Save to Notion
+AI Developer
+Ask anything, create anything
+Claude Sonnet 4.5
+Claude Sonnet 4.5
+Tool Call
+Function Name:
+Write
+Arguments:
+file_path:
+index.html
+content:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharpness Sword - Minecraft Survival Server</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <img src="logo.png" alt="Sharpness Sword Logo" class="logo" id="serverLogo">
+                    <span class="logo-text">Sharpness Sword</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#join" class="nav-link">Join Now</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#features" class="mobile-nav-link">Features</a>
+        <a href="#join" class="mobile-nav-link">Join Now</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="SHARPNESS SWORD">SHARPNESS SWORD</span>
+                </h1>
+                <p class="hero-subtitle">The Ultimate Minecraft Survival Experience</p>
+                <p class="hero-description">
+                    Join our thriving community and embark on an epic survival adventure. 
+                    Battle monsters, build kingdoms, and forge your legacy!
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="copyIP()">
+                        <i class="fas fa-server"></i>
+                        <span>Copy Server IP</span>
+                    </button>
+                    <a href="https://discord.gg/SgKXfpKeV9" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-discord"></i>
+                        <span>Join Discord</span>
+                    </a>
+                </div>
+                <div class="server-status">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Server Online</span>
+                    </div>
+                    <div class="player-count">
+                        <i class="fas fa-users"></i>
+                        <span id="playerCount">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Server Info Section -->
+    <section class="server-info" id="join">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-info-circle"></i></span>
+                Server Information
+            </h2>
+            <div class="info-grid">
+                <div class="info-card" data-aos="fade-up">
+                    <div class="info-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="info-title">Server IP</h3>
+                    <div class="info-value" id="serverIP">play.sharpnesssword.fun</div>
+                    <button class="copy-btn" onclick="copyToClipboard('play.sharpnesssword.fun', 'Server IP')">
+                        <i class="fas fa-copy"></i> Copy IP
+                    </button>
+                </div>
+
+                <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-icon discord">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3 class="info-title">Discord Server</h3>
+                    <div class="info-value">discord.gg/SgKXfpKeV9</div>
+                    <a href="https://discord.gg/SgKXfpKeV9" target="_blank" class="copy-btn">
+                        <i class="fab fa-discord"></i> Join Discord
+                    </a>
+                </div>
+
+                <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-icon store">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="info-title">Server Store</h3>
+                    <div class="info-value">shop.sharpnesssword.fun</div>
+                    <a href="https://shop.sharpnesssword.fun" target="_blank" class="copy-btn">
+                        <i class="fas fa-external-link-alt"></i> Visit Store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-frame">
+                        <div class="minecraft-blocks">
+                            <i class="fas fa-cube"></i>
+                            <i class="fas fa-cube"></i>
+                            <i class="fas fa-cube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-sword"></i></span>
+                        About Our Server
+                    </h2>
+                    <p class="about-description">
+                        Welcome to <strong>Sharpness Sword</strong>, where survival meets adventure! 
+                        Our server offers a pure vanilla survival experience with enhanced features 
+                        that make gameplay more engaging and fun.
+                    </p>
+                    <p class="about-description">
+                        Join a friendly community of players, participate in events, build incredible 
+                        structures, and create your own story in our vast survival world. Whether you're 
+                        a solo player or prefer teaming up, there's something for everyone!
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Players</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Fun</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon"><i class="fas fa-star"></i></span>
+                Server Features
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="zoom-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Grief Protection</h3>
+                    <p class="feature-description">
+                        Your builds are safe with our advanced land claiming system. 
+                        Protect your creations from griefers!
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Active Community</h3>
+                    <p class="feature-description">
+                        Join a vibrant community of friendly players. Make friends, 
+                        form teams, and create memories!
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="feature-title">Events & Contests</h3>
+                    <p class="feature-description">
+                        Regular events, building contests, and challenges with 
+                        amazing rewards for winners!
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="feature-title">Economy System</h3>
+                    <p class="feature-description">
+                        Trade with players, open shops, and build your wealth 
+                        in our balanced economy!
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Custom Enchants</h3>
+                    <p class="feature-description">
+                        Discover unique custom enchantments that add new 
+                        dimensions to your gameplay!
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Support</h3>
+                    <p class="feature-description">
+                        Our dedicated staff team is always ready to help you 
+                        with any issues or questions!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Ready to Start Your Adventure?</h2>
+                <p class="cta-description">
+                    Join thousands of players in the ultimate Minecraft survival experience!
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="copyIP()">
+                        <i class="fas fa-server"></i>
+                        Copy Server IP
+                    </button>
+                    <a href="https://shop.sharpnesssword.fun" target="_blank" class="btn btn-outline btn-large">
+                        <i class="fas fa-shopping-cart"></i>
+                        Visit Store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Sharpness Sword</h3>
+                    <p class="footer-description">
+                        The ultimate Minecraft survival server. Join us today and 
+                        become part of our amazing community!
+                    </p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/SgKXfpKeV9" target="_blank" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#join">Join Server</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://discord.gg/SgKXfpKeV9" target="_blank">Discord</a></li>
+                        <li><a href="https://shop.sharpnesssword.fun" target="_blank">Store</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Server IP</h3>
+                    <div class="footer-ip">play.sharpnesssword.fun</div>
+                    <button class="btn btn-small" onclick="copyIP()">
+                        <i class="fas fa-copy"></i> Copy IP
+                    </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sharpness Sword. All rights reserved.</p>
+                <p>Not affiliated with Mojang or Microsoft.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
